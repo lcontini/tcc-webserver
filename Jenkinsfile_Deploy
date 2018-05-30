@@ -1,13 +1,13 @@
 node('master') {
 
-stage 'Checkout'
-  checkout scm
+	stage 'Checkout'
+  	checkout scm
 
-stage 'Push Versao'
-    sh '#!/bin/bash
+	stage 'Push Versao'
+    		sh '''#!/bin/bash
 
-	touch "testfile_dev" >> testfile_dev
+		touch "testfile_dev" >> testfile_dev
 
-    done'
+    		done'''
 
 }
