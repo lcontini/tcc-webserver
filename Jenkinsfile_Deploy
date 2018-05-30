@@ -8,7 +8,7 @@ stage 'Checkout'
 stage 'Push Versão'
     sh '''#!/bin/bash
 
-	touch "testfile" >> testfile
+	touch "testfile_dev" >> testfile_dev
 
     done'''
 
