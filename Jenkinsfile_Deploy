@@ -5,7 +5,7 @@ stage 'Checkout'
 
 stage 'Push Versao'
  sh '''#!/bin/bash
-
+   cd /home/lcontini/tcc-webserver
    touch "testfile_dev" >> testfile_dev
 
  '''
