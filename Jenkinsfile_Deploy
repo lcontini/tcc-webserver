@@ -1,0 +1,16 @@
+node('master') {
+
+ansiColor('xterm') {
+
+stage 'Checkout'
+  checkout scm
+
+stage 'Push Versão'
+    sh '''#!/bin/bash
+
+	touch "testfile" >> testfile
+
+    done'''
+
+  }
+}
