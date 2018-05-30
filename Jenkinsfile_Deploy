@@ -8,5 +8,5 @@ stage 'Push Versao'
 
    touch "testfile_dev" >> testfile_dev
 
- done'''
+ '''
 }
