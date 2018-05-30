@@ -1,7 +1,5 @@
 node('master') {
 
-ansiColor('xterm') {
-
 stage 'Checkout'
   checkout scm
 
@@ -12,5 +10,4 @@ stage 'Push Versão'
 
     done'''
 
-  }
 }
