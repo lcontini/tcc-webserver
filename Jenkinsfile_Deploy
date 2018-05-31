@@ -5,8 +5,9 @@ stage 'Checkout'
 
 stage 'Push Versao'
  sh '''#!/bin/bash
-   cd /home/lcontini/tcc-webserver
-   touch "testfile_dev" >> testfile_dev
-
+   ssh -tty root@tcc-webserver1 '
+	source ~/.bash_profile;
+	rm -rf /var/www; 
+	git clone -b dev git@github.com:lcontini/tcc-webserver.git /var/www'
  '''
 }
