@@ -4,11 +4,6 @@ stage 'Checkout'
  checkout scm
 
 stage 'Push Versao'
- sh '''#!/bin/bash
-
-	for host in tcc-webserver1
-	do
-		ssh root@$host rm -rf /var/www; 
-		ssh root@$host git clone -b dev https://github.com/lcontini/tcc-webserver.git /var/www'
- done'''
+ sh 'ssh root@tcc-webserver1 rm -rf /var/www'
+ sh 'ssh root@tcc-webserver1 git clone -b dev https://github.com/lcontini/tcc-webserver.git /var/www'
 }
