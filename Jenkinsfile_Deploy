@@ -1,9 +1,0 @@
-node('master') {
-
-stage 'Checkout'
- checkout scm
-
-stage 'Push Versao PRD'
- sh 'ssh -tty tcc-webserver2 sudo rm -rf /var/www'
- sh 'ssh -tty tcc-webserver2 sudo git clone -b master https://github.com/lcontini/tcc-webserver.git /var/www'
-}
